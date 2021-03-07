@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var isOn: Bool=false
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        LandmarkList()
     }
 }
 
