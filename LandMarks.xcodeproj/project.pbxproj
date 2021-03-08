@@ -22,6 +22,7 @@
 		1B94823925F4B0360032EE7E /* GithubAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B94823825F4B0360032EE7E /* GithubAPIService.swift */; };
 		1B94823E25F4B5980032EE7E /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B94823D25F4B5980032EE7E /* ImageLoader.swift */; };
 		1B94824325F4B6CB0032EE7E /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B94824225F4B6CB0032EE7E /* ImageView.swift */; };
+		1B94824825F5F5890032EE7E /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B94824725F5F5890032EE7E /* FavoriteButton.swift */; };
 		1BF5A4EA25F1C81800A15F0C /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = 1BF5A4E925F1C81800A15F0C /* landmarkData.json */; };
 		1BF5A50425F1CA1F00A15F0C /* icybay.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1BF5A4F525F1CA1E00A15F0C /* icybay.jpg */; };
 		1BF5A50525F1CA1F00A15F0C /* lakemcdonald.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1BF5A4F625F1CA1E00A15F0C /* lakemcdonald.jpg */; };
@@ -83,6 +84,7 @@
 		1B94823825F4B0360032EE7E /* GithubAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubAPIService.swift; sourceTree = "<group>"; };
 		1B94823D25F4B5980032EE7E /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		1B94824225F4B6CB0032EE7E /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		1B94824725F5F5890032EE7E /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 		1BF5A4E925F1C81800A15F0C /* landmarkData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = landmarkData.json; sourceTree = "<group>"; };
 		1BF5A4F525F1CA1E00A15F0C /* icybay.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = icybay.jpg; sourceTree = "<group>"; };
 		1BF5A4F625F1CA1E00A15F0C /* lakemcdonald.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lakemcdonald.jpg; sourceTree = "<group>"; };
@@ -191,6 +193,36 @@
 			path = LandMarksUITests;
 			sourceTree = "<group>";
 		};
+		1B94824C25F60ED20032EE7E /* Landmarks */ = {
+			isa = PBXGroup;
+			children = (
+				1BF5A52D25F2363A00A15F0C /* LandmarkRow.swift */,
+				1B94822425F279AD0032EE7E /* LandmarkList.swift */,
+				1B94822925F280310032EE7E /* LandmarkDetail.swift */,
+			);
+			path = Landmarks;
+			sourceTree = "<group>";
+		};
+		1B94824D25F60F110032EE7E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				1B6A0CC525EF9FF40054C63B /* CircleImage.swift */,
+				1B6A0CCA25EFA12E0054C63B /* MapView.swift */,
+				1B94824725F5F5890032EE7E /* FavoriteButton.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		1B94825125F60F420032EE7E /* GithubUsers */ = {
+			isa = PBXGroup;
+			children = (
+				1B94822E25F4AF5B0032EE7E /* GithubUsersCombineView.swift */,
+				1B94823325F4AFF10032EE7E /* GithubUserInfoRow.swift */,
+				1B94824225F4B6CB0032EE7E /* ImageView.swift */,
+			);
+			path = GithubUsers;
+			sourceTree = "<group>";
+		};
 		1BF5A4E825F1C7E800A15F0C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -225,15 +257,10 @@
 		1BF5A52B25F2359C00A15F0C /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				1B6A0CC525EF9FF40054C63B /* CircleImage.swift */,
-				1B6A0CCA25EFA12E0054C63B /* MapView.swift */,
+				1B94824D25F60F110032EE7E /* Helpers */,
 				1B6A0C9925EF91990054C63B /* ContentView.swift */,
-				1BF5A52D25F2363A00A15F0C /* LandmarkRow.swift */,
-				1B94822425F279AD0032EE7E /* LandmarkList.swift */,
-				1B94822925F280310032EE7E /* LandmarkDetail.swift */,
-				1B94822E25F4AF5B0032EE7E /* GithubUsersCombineView.swift */,
-				1B94823325F4AFF10032EE7E /* GithubUserInfoRow.swift */,
-				1B94824225F4B6CB0032EE7E /* ImageView.swift */,
+				1B94824C25F60ED20032EE7E /* Landmarks */,
+				1B94825125F60F420032EE7E /* GithubUsers */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -405,6 +432,7 @@
 				1BF5A51725F1CA6F00A15F0C /* Landmark.swift in Sources */,
 				1BF5A52E25F2363A00A15F0C /* LandmarkRow.swift in Sources */,
 				1B94823925F4B0360032EE7E /* GithubAPIService.swift in Sources */,
+				1B94824825F5F5890032EE7E /* FavoriteButton.swift in Sources */,
 				1B94823425F4AFF10032EE7E /* GithubUserInfoRow.swift in Sources */,
 				1B94822A25F280310032EE7E /* LandmarkDetail.swift in Sources */,
 				1B94822F25F4AF5B0032EE7E /* GithubUsersCombineView.swift in Sources */,

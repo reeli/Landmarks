@@ -10,16 +10,22 @@ struct LandmarkRow: View {
             Text(landmark.name)
             
             Spacer()
+            
+            if landmark.isFavorite {
+                Image(systemName: "star.fill")
+                    .foregroundColor(.yellow)
+            }
         }
     }
 }
 
 struct LandmarkRow_Previews: PreviewProvider {
+    static var landmarkData = ModelData().landmarkData
+    
     static var previews: some View {
         Group{
             LandmarkRow(landmark: landmarkData[0])
             LandmarkRow(landmark: landmarkData[1])
-            LandmarkRow(landmark: landmarkData[3])
         }
         .previewLayout(.fixed(width: 300, height: 70))
     }
