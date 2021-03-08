@@ -9,7 +9,24 @@ import SwiftUI
 
 struct GithubUsersCombineView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView{
+            Image("icybay")
+                .resizable()
+                .scaledToFill()
+                .frame(height: 300)
+                .clipped()
+                
+            
+            VStack(alignment: .leading) {
+                LabledTextField(label: "NAME", placeholder: "Please fill in the restaurant name")
+                LabledTextField(label: "TYPE", placeholder: "Please fill in the restaurant type")
+                LabledTextField(label: "ADDRESS", placeholder: "Please fill in the restaurant address")
+                LabledTextField(label: "PHONE", placeholder: "Please fill in the restaurant phone")
+                LabledTextField(label: "DESCRIPTION", placeholder: "Please fill in the restaurant description")
+                RoundedButton(label: "Save").padding(.top, 20)
+            }
+            .padding(.top, 20)
+        }
     }
 }
 
