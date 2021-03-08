@@ -8,20 +8,29 @@
 import SwiftUI
 
 struct LandmarkDetail: View {
+    @EnvironmentObject var modelData: ModelData
     var landmark: Landmark
+    
+    var landmarkIndex: Int {
+        modelData.landmarkData.firstIndex(where: {$0.id==landmark.id})!
+    }
     
     var body: some View {
         ScrollView {
             MapView(coordinate: landmark.locationCordinate).ignoresSafeArea(edges:.top).frame(height:300)
             
             CircleImage(image: landmark.image)
+                .frame(width:50)
                 .offset(y:-130)
-                .padding(.bottom,-130)
+                .padding(.bottom, -130)
             
             VStack(alignment: .leading, spacing: /*@START_MENU_TOKEN@*/nil/*@END_MENU_TOKEN@*/, content: {
-                Text(landmark.name)
-                    .font(.title)
-                    .bold()
+                HStack{
+                    Text(landmark.name)
+                        .font(.title)
+                        .foregroundColor(.primary)
+                    FavoriteButton(isSet: $modelData.landmarkData[landmarkIndex].isFavorite)
+                }
                 HStack {
                     Text(landmark.park)
                         .font(.subheadline)
@@ -45,7 +54,10 @@ struct LandmarkDetail: View {
 }
 
 struct LandmarkDetail_Previews: PreviewProvider {
+    static let modelData = ModelData()
+    
     static var previews: some View {
-        LandmarkDetail(landmark: ModelData().landmarkData[0])
+        LandmarkDetail(landmark: modelData.landmarkData[0])
+            .environmentObject(modelData)
     }
 }
