@@ -1,11 +1,11 @@
 {
   "images" : [
     {
-      "filename" : "lakemcdonald.jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "lakemcdonald.jpg",
       "idiom" : "universal",
       "scale" : "2x"
     },

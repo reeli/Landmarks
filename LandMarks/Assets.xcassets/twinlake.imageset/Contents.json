@@ -1,11 +1,11 @@
 {
   "images" : [
     {
-      "filename" : "twinlake.jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "twinlake.jpg",
       "idiom" : "universal",
       "scale" : "2x"
     },

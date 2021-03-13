@@ -1,11 +1,11 @@
 {
   "images" : [
     {
-      "filename" : "umbagog.jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "umbagog.jpg",
       "idiom" : "universal",
       "scale" : "2x"
     },

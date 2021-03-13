@@ -1,11 +1,11 @@
 {
   "images" : [
     {
-      "filename" : "silversalmoncreek.jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "silversalmoncreek.jpg",
       "idiom" : "universal",
       "scale" : "2x"
     },
