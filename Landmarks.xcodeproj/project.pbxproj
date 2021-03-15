@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B15142C25FF695500AD2C57 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B15142B25FF695500AD2C57 /* FavoriteButton.swift */; };
 		1B6A0C9825EF91990054C63B /* LandmarksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6A0C9725EF91990054C63B /* LandmarksApp.swift */; };
 		1B6A0C9A25EF91990054C63B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6A0C9925EF91990054C63B /* ContentView.swift */; };
 		1B6A0C9F25EF919C0054C63B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B6A0C9E25EF919C0054C63B /* Preview Assets.xcassets */; };
@@ -57,6 +58,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B15142B25FF695500AD2C57 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 		1B6A0C9425EF91990054C63B /* Landmarks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Landmarks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B6A0C9725EF91990054C63B /* LandmarksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarksApp.swift; sourceTree = "<group>"; };
 		1B6A0C9925EF91990054C63B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -222,6 +224,7 @@
 				1BEC3C2D25FCB19C00F35D9B /* ModelData.swift */,
 				1BEC3C3225FCB86D00F35D9B /* LandmarkList.swift */,
 				1BEC3C3A25FCB93800F35D9B /* LandmarkRow.swift */,
+				1B15142B25FF695500AD2C57 /* FavoriteButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -380,6 +383,7 @@
 				1B6A0C9825EF91990054C63B /* LandmarksApp.swift in Sources */,
 				1BEC3C1125FCA94900F35D9B /* CircleImage.swift in Sources */,
 				1BEC3C3B25FCB93800F35D9B /* LandmarkRow.swift in Sources */,
+				1B15142C25FF695500AD2C57 /* FavoriteButton.swift in Sources */,
 				1BEC3C3325FCB86D00F35D9B /* LandmarkList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
