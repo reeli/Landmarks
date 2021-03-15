@@ -11,12 +11,8 @@ struct LandmarkList: View {
     @State private var showFavoritesOnly = false
     
     var filteredLandmarks: [Landmark] {
-        return landmarks.filter { landmark in
-            if !showFavoritesOnly {
-                return true
-            }
-            
-            return landmark.isFavorite
+        landmarks.filter { landmark in
+            !showFavoritesOnly || landmark.isFavorite
         }
     }
     
