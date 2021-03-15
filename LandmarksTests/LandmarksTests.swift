@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import LandMarks
+@testable import Landmarks
 
 class LandMarksTests: XCTestCase {
 
